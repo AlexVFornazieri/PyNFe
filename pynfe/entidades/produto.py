@@ -34,6 +34,8 @@ class Produto(Entidade):
     # Tabela https://www.confaz.fazenda.gov.br/anexo-i.pdf
     cest = str()
 
+    cbenef = str()
+
     # - Unid. Com.
     unidade_comercial = str()
 
@@ -102,6 +104,11 @@ class Produto(Entidade):
     cofins_valor_base_calculo = str()
     cofins_aliquota_percentual = str()
     cofins_valor = str()
+
+    # # Fundo de Combate a Pobreza
+    fcp_base_calculo = Decimal()
+    fcp_percentual = Decimal()
+    fcp_valor = Decimal()
 
     # # - ICMS (lista 1 para * / ManyToManyField)
     icms = None

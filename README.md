@@ -1,10 +1,14 @@
+
+Atualizado para a versão 4.00 NF-e/NFC-e
+-----------
+
 Visão Geral
 -----------
 
 Biblioteca de interface com o webservice de Nota Fiscal Eletronica,
 (NF-e/NFC-e/NFS-e) da SEFAZ, oficializada pelo Ministerio da Fazendo do
 Governo do Brasil.  
-Desenvolvido e testado com Python 3 no GNU/Linux.
+Desenvolvido e testado com Python 3.6 no GNU/Linux.
 
 A NF-e visa substituir as notas fiscais séries 1 e 1A.  
 A NFC-e visa substituir as notas fiscais modelo 2 e
@@ -15,12 +19,10 @@ NFS-e padrão Abrasf para autorizadores Ginfes e Betha.
 Dependências
 ------------
 
-- Java 8u51
-  - para a geração da DANFE
 - lxml
   - biblioteca de leitura e gravação de arquivos XML, de alta
     performance e fácil de implementar.
-- xmlsec1 e openssl (instalado no SO)
+- signxml
   - assinatura e validação do XML
 - pyopenssl
   - biblioteca para manuseio do certificado digital
@@ -58,13 +60,13 @@ Instalação
 -----------
 
 ```sh
-pip3 install --user https://github.com/leotada/PyNFe/archive/master.zip
+pip3 install --user https://github.com/TadaSoftware/PyNFe/archive/master.zip
 ```
 
 Opcional para NFS-e:
 
 ```sh
-pip3 install --user -r https://github.com/leotada/PyNFe/raw/master/requirements-nfse.txt
+pip3 install --user -r https://github.com/TadaSoftware/PyNFe/raw/master/requirements-nfse.txt
 ```
 
 Exemplos de uso
